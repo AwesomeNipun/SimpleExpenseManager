@@ -1,7 +1,15 @@
 {
   "version": 2,
   "artifactType": {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:app/build/intermediates/packaged_manifests/release/output-metadata.json
     "type": "PACKAGED_MANIFESTS",
+=======
+    "type": "MERGED_MANIFESTS",
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
+=======
+    "type": "PACKAGED_MANIFESTS",
+>>>>>>> Stashed changes
     "kind": "Directory"
   },
   "applicationId": "lk.ac.mrt.cse.dbs.simpleexpensemanager",

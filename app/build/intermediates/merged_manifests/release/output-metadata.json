@@ -1,6 +1,7 @@
 {
   "version": 2,
   "artifactType": {
+<<<<<<< Updated upstream
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
@@ -14,12 +15,24 @@
   "variantName": "release",
 >>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
 >>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:app/build/intermediates/packaged_manifests/release/output-metadata.json
+    "type": "PACKAGED_MANIFESTS",
+=======
+    "type": "MERGED_MANIFESTS",
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
+    "kind": "Directory"
+  },
+  "applicationId": "lk.ac.mrt.cse.dbs.simpleexpensemanager",
+  "variantName": "release",
+>>>>>>> Stashed changes
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "versionCode": 1,
       "versionName": "1.0",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "outputFile": "AndroidManifest.xml"
 =======
@@ -28,6 +41,9 @@
 =======
       "outputFile": "AndroidManifest.xml"
 >>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
+>>>>>>> Stashed changes
+=======
+      "outputFile": "AndroidManifest.xml"
 >>>>>>> Stashed changes
     }
   ]
