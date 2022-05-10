@@ -16,6 +16,7 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -30,6 +31,8 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.ExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.control.PersistentExpenseManager;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.db.DatabaseHelper;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountException;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
+import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -48,9 +51,21 @@ public class ApplicationTest{
     @Test
     public void checkAccount(){
         try {
-            assertTrue(expenseManager.getAccountsDAO().getAccount("8070").getAccountNo().equals("8070"));
+            assertEquals("8070", expenseManager.getAccountsDAO().getAccount("8070").getAccountNo());
         } catch (InvalidAccountException e) {
             fail();
         }
+    }
+    @Test
+    public void checkTransaction(){
+        int size_before = expenseManager.getTransactionLogs().size();
+        try {
+            expenseManager.updateAccountBalance("8070", 3, 12, 2021, ExpenseType.EXPENSE, "1000");
+        } catch (InvalidAccountException e) {
+            fail();
+        }
+        int size_after = expenseManager.getTransactionLogs().size();
+        assertEquals(1, (size_after - size_before));
+
     }
 }
