@@ -68,10 +68,10 @@ public class PersistentTransactionDAO implements TransactionDAO {
         List<Transaction> transactions = new LinkedList<>();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            String date = cursor.getString(cursor.getColumnIndex(DATE));
-            String accountNo= cursor.getString(cursor.getColumnIndex(ACCOUNT_NO));
-            String expenseType = cursor.getString(cursor.getColumnIndex(EXPENSE_TYPE));
-            double amount = cursor.getDouble(cursor.getColumnIndex(AMOUNT));
+            String date = cursor.getString(cursor.getColumnIndexOrThrow(DATE));
+            String accountNo= cursor.getString(cursor.getColumnIndexOrThrow(ACCOUNT_NO));
+            String expenseType = cursor.getString(cursor.getColumnIndexOrThrow(EXPENSE_TYPE));
+            double amount = cursor.getDouble(cursor.getColumnIndexOrThrow(AMOUNT));
             try {
                 transactions.add(new Transaction(
                         dateFormat.parse(date),

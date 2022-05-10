@@ -53,10 +53,10 @@ public class PersistentAccountDAO implements AccountDAO {
         List<Account> accounts = new LinkedList<>();
 
         for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()){
-            String accountNo = cursor.getString(cursor.getColumnIndex(ACCOUNT_NO));
-            String bankName = cursor.getString(cursor.getColumnIndex(BANK_NAME));
-            String accountHolderName = cursor.getString(cursor.getColumnIndex(ACCOUNT_HOLDER_NAME));
-            double balance = cursor.getDouble(cursor.getColumnIndex(BALANCE));
+            String accountNo = cursor.getString(cursor.getColumnIndexOrThrow(ACCOUNT_NO));
+            String bankName = cursor.getString(cursor.getColumnIndexOrThrow(BANK_NAME));
+            String accountHolderName = cursor.getString(cursor.getColumnIndexOrThrow(ACCOUNT_HOLDER_NAME));
+            double balance = cursor.getDouble(cursor.getColumnIndexOrThrow(BALANCE));
             Account account = new Account(accountNo, bankName, accountHolderName, balance);
             accounts.add(account);
         }
