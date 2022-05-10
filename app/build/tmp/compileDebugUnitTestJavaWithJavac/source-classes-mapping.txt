@@ -1,2 +1,0 @@
-lk/ac/mrt/cse/dbs/simpleexpensemanager/data/model/AccountTest.java
- lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.AccountTest
