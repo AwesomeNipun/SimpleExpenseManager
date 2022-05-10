@@ -5,14 +5,30 @@
     "kind": "Directory"
   },
   "applicationId": "lk.ac.mrt.cse.dbs.simpleexpensemanager",
+<<<<<<< Updated upstream
   "variantName": "release",
+=======
+<<<<<<< Updated upstream:app/build/outputs/apk/release/output-metadata.json
+  "variantName": "processReleaseResources",
+=======
+  "variantName": "release",
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
+>>>>>>> Stashed changes
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "versionCode": 1,
       "versionName": "1.0",
+<<<<<<< Updated upstream
       "outputFile": "AndroidManifest.xml"
+=======
+<<<<<<< Updated upstream:app/build/outputs/apk/release/output-metadata.json
+      "outputFile": "app-release-unsigned.apk"
+=======
+      "outputFile": "AndroidManifest.xml"
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
+>>>>>>> Stashed changes
     }
   ]
 }

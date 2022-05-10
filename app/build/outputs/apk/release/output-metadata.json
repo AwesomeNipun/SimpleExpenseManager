@@ -1,18 +1,26 @@
 {
   "version": 2,
   "artifactType": {
-    "type": "APK",
+    "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
   "applicationId": "lk.ac.mrt.cse.dbs.simpleexpensemanager",
+<<<<<<< Updated upstream:app/build/outputs/apk/release/output-metadata.json
   "variantName": "processReleaseResources",
+=======
+  "variantName": "release",
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "versionCode": 1,
       "versionName": "1.0",
+<<<<<<< Updated upstream:app/build/outputs/apk/release/output-metadata.json
       "outputFile": "app-release-unsigned.apk"
+=======
+      "outputFile": "AndroidManifest.xml"
+>>>>>>> Stashed changes:app/build/intermediates/merged_manifests/release/output-metadata.json
     }
   ]
 }
