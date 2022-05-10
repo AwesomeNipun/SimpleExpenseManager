@@ -1,0 +1,4 @@
+#Tue May 10 23:37:59 IST 2022
+base.0=E\:\\SimpleExpenseManager\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
